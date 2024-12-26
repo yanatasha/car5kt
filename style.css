@@ -1,0 +1,68 @@
+body{
+    background-color: aqua;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFLJoxWAY5YakJ9FMpVjyTHHYGqXKPnjT2dg&s');
+    background-size: cover;
+  }
+  *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+   .car{
+      width:200px;
+      position:absolute;
+      bottom:40px;
+      animation:drive 5s ease-in-out infinite;
+      background: rgb(63,173,251);
+background: radial-gradient(circle, rgba(63,173,251,1) 44%, rgba(85,99,196,1) 99%, rgba(61,227,143,1) 100%);
+      border-radius: 20px 27px 5px 5px;
+      
+    }
+    .body{
+      height:50px;
+      background: rgb(85,99,196);
+      background: radial-gradient(circle, rgba(85,99,196,1) 13%, rgba(67,63,251,1) 80%, rgba(70,240,252,1) 100%);
+      transform:translateY(30%);
+      z-index:1;
+      
+    }
+    
+    .wheels{
+      display:flex;
+      justify-content:space-around;
+    }
+    .wheel{
+      height:30px;
+      width:30px;
+      background-color:black;
+      border-radius:50%;
+      z-index:10;
+    }
+    .road{
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100vw;
+      height:40px;
+      background: rgb(1,9,9);
+background: linear-gradient(0deg, rgba(1,9,9,1) 7%, rgba(56,100,205,1) 71%, rgba(28,76,212,1) 97%);
+    }
+    .moon{
+      height:100px;
+      width:100px;
+      background: rgb(254,255,252);
+      background: radial-gradient(circle, rgba(254,255,252,1) 20%, rgba(251,230,172,1) 76%);
+      border-radius:50%;
+    }
+    
+    @keyframes drive{
+      from{
+        left:-200px;
+      }
+      to{
+        left:calc(100vw - 50px - 200px);
+      }
+    }
+
+  
+    
